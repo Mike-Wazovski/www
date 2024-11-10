@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./player-song-1.css">
+    <script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <main>
+            <img src="./images/player-pc-img-qqq.png" alt="Music Player" class="pc-player-img rotating">
+            <p class="song-name">6 For 6</p>
+            
+            <div class="controls">
+                <a href="#" class="back"><img src="./images/back-icon.svg" alt="Back" class="back-icon"></a>
+                <a href="#" class="play"><img src="./images/play-icon.svg" alt="Play" class="play-icon"></a>
+                <a href="#" class="next"><img src="./images/next--icon.svg" alt="Next" class="next-icon"></a>
+            </div>
+            <div class="track-info">
+                <span class="current-time">0:00</span> / <span class="duration">0:00</span>
+                <input type="range" class="track-slider" value="0" min="0" step="1">
+            </div>
+            <div class="song-menu">
+                <h2>Available Songs:</h2>
+                <div class="song-list"></div> <!-- Контейнер для списка песен -->
+            </div>
+        </main>
+    </div>
+</body>
+</html>

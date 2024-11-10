@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    background-color: #1E1E1E;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+main {
+    background: #2A2A2A;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.pc-player-img {
+    box-shadow: 0 0 100px #00E5FF;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+}
+
+.pc-player-img:hover {
+    transform: scale(1.1); /* Эффект увеличения при наведении */
+}
+
+.song-name {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #00e5ff;
+    margin: 20px 0;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.back-icon, .play-icon, .next-icon {
+    border: 4px solid #00E5FF;
+    border-radius: 50%;
+    padding: 16px;
+    transition: background-color 0.3s;
+}
+
+.play-icon {
+    padding: 35px;
+    margin: 0 20px;
+}
+
+.back-icon:hover, .play-icon:hover, .next-icon:hover {
+    background-color: rgba(0, 229, 255, 0.2);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    animation: rotate 5s linear infinite;
+}
+
+.song-menu {
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+}
+
+.song-menu h2 {
+    font-size: 1.5rem;
+    color: #00E5FF;
+}
+
+.song-list {
+    max-height: 200px; /* Максимальная высота для контейнера с песнями */
+    overflow-y: auto; /* Включение прокрутки по вертикали */
+    padding-right: 10px; /* Отступ для прокрутки */
+    scrollbar-width: thin; /* Для Firefox */
+    scrollbar-color: #00E5FF transparent; /* Цвет скролла */
+}
+
+.song-list::-webkit-scrollbar {
+    width: 8px; /* Ширина скролла */
+}
+
+.song-list::-webkit-scrollbar-track {
+    background: transparent; /* Цвет фона скролла */
+}
+
+.song-list::-webkit-scrollbar-thumb {
+    background-color: #00E5FF; /* Цвет ползунка скролла */
+    border-radius: 10px; /* Закругление углов */
+}
+
+.song-link {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background: #3A3A3A; /* Цвет фона для ссылки */
+    border-radius: 5px;
+    color: #00E5FF;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s; /* Эффект при наведении */
+}
+
+.song-link:hover {
+    background: rgba(0, 229, 255, 0.3); /* Эффект при наведении */
+}
+
+.home-button {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #00E5FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.home-button:hover {
+    background-color: #0099cc;
+}
+
+.track-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    color: #00E5FF; /* Цвет текста */
+}
+
+.track-info span {
+    font-size: 1.2rem; /* Размер шрифта для времени */
+    margin: 0 10px; /* Отступы между элементами времени */
+}
+
+.track-slider {
+    width: 100%;
+    margin-left: 10px;
+    cursor: pointer; /* Курсор-указатель при наведении */
+    background: #3A3A3A; /* Цвет фона ползунка */
+    -webkit-appearance: none; /* Убираем стандартный стиль для Webkit-браузеров */
+    height: 8px; /* Высота ползунка */
+    border-radius: 5px; /* Закругленные края */
+}
+
+.track-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Убираем стандартный стиль для ползунка */
+    appearance: none;
+    width: 20px; /* Ширина ползунка */
+    height: 20px; /* Высота ползунка */
+    background: #00E5FF; /* Цвет ползунка */
+    border-radius: 50%; /* Закругленные края для ползунка */
+    cursor: pointer; /* Курсор-указатель при наведении */
+}
+
+.track-slider::-moz-range-thumb {
+    width: 20px; /* Ширина ползунка */
+    height: 20px; /* Высота ползунка */
+    background: #00E5FF; /* Цвет ползунка */
+    border-radius: 50%; /* Закругленные края для ползунка */
+    cursor: pointer; /* Курсор-указатель при наведении */
+}
+
+.song-list {
+    border-radius: 10px;
+}
+
+
+.container{
+    height: 100%;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
