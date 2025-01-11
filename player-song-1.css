@@ -202,3 +202,10 @@ html{
 body{
     height: 100%;
 }
+
+@media(max-width:375px){
+    .pc-player-img rotating{
+        width:300px;
+        height:300px;
+    }
+}
